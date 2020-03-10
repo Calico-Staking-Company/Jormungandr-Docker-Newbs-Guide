@@ -14,21 +14,25 @@ If you have any questions, feel free to reach out!
 
 ### Prerequisites
 
-This guide will assume you have your server of choice set up with a fresh install. This guide will use Ubuntu. You will need at least 1GB RAM with 2GB swap space and 1TB of transfer (Digital Ocean should work fine). They have a good guide <here> for setting everything up.
+To start off, you will need a server with enough RAM to run Jormunandr. We recommend 4-8GB. You can run whatever Linux distro you want, but we will be writing this up for Ubuntu. Digital Ocean works great, and if you're new, follow <this link> for a $100 free voucher. They also have great guides for setup <here>, <here>, and <here>.
+
+
+## Setup Docker
+
+Once you have your server set ip, install Docker.io:
 
 ```
-Give examples
+apt install docker.io
 ```
 
-### Installing Docker
+Then set up your directories:
 
-Install Docker using 
-```apt install docker.io```
+```
+mkdir jormungandr; mkdir jormungandr/conf; cd jormungandr
+```
 
 For info on adding your non-root user to a group with Docker permissions, go <here>. This allows you to use Docker without sudo permissions.
 
-Create some directories
-```mkdir jorm```
 
 
 
