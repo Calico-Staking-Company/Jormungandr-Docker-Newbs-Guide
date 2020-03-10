@@ -12,12 +12,26 @@ Later on, we will go over how to make Ansible do a bulk of the deployment work, 
 
 ### Prerequisites
 
-type stuff here
+To start off, you will need a server with enough RAM to run Jormunandr. We recommend 4-8GB. You can run whatever Linux distro you want, but we will be writing this up for Ubuntu.
+
+
+## Setup Docker
+
+Once you have your server setup install docker.io
 
 ```
-Give examples
+apt install docker.io
 ```
 
+Then create a folder for the project, and inside of that create a folder for the config files
+
+```
+mkdir jormungandr
+mkdir jormungandr/conf
+cd jormungandr
+```
+
+next initialize your 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
