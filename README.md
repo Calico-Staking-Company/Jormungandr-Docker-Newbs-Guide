@@ -8,31 +8,29 @@ In this guide, you will set up a Docker Swarm with a single node for Jormungandr
 
 This guide assumes you have little to no familiarity with Docker, but if you do, this guide will be even easier and will explain how to configure the node and generate the appropriate certificates to start the node as a slot leader. We will also go over the pull request to make your staking pool official!
 
-Later on, we will go over how to make Ansible do a bulk of the deployment work, with the target of bringing deployment time three minutes or so (if you have the pool already set up).
+This is optional, but later on, we will go over how to make Ansible do a bulk of the deployment work, with the target of bringing deployment time three minutes or so (if you have the pool already set up).
+
+If you have any questions, feel free to reach out!
 
 ### Prerequisites
 
-type stuff here
+This guide will assume you have your server of choice set up with a fresh install. This guide will use Ubuntu. You will need at least 1GB RAM with 2GB swap space and 1TB of transfer (Digital Ocean should work fine). They have a good guide <here> for setting everything up.
 
 ```
 Give examples
 ```
 
-### Installing
+### Installing Docker
 
-A step by step series of examples that tell you how to get a development env running
+Install Docker using 
+```apt install docker.io```
 
-Say what the step will be
+For info on adding your non-root user to a group with Docker permissions, go <here>. This allows you to use Docker without sudo permissions.
 
-```
-Give the example
-```
+Create some directories
+```mkdir jorm```
 
-And repeat
 
-```
-until finished
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
