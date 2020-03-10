@@ -25,22 +25,33 @@ Once you have your server set ip, install Docker.io:
 apt install docker.io
 ```
 
-Then set up your directories:
+## Set up directories
+
 
 ```
-mkdir jormungandr; mkdir jormungandr/conf; cd jormungandr
+mkdir jormungandr 
+mkdir jormungandr/conf 
+cd jormungandr
+```
+## Add Docker permissions to your user
+
+```
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER # change $USER for your username
 ```
 
-For info on adding your non-root user to a group with Docker permissions, go <here>. This allows you to use Docker without sudo permissions.
+## Configure Docker to start on boot
+
+```
+$ sudo systemctl enable docker
+```
+
+For more info on post-installation Docker setup, go <a href="https://docs.docker.com/install/linux/linux-postinstall/">here</a>. 
 
 
+## Setting up your config files
 
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
