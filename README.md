@@ -16,6 +16,7 @@ If you have any questions, feel free to reach out!
 
 To start off, you will need a server with enough RAM to run Jormunandr. We recommend 4-8GB. You can run whatever Linux distro you want, but we will be writing this up for Ubuntu. Digital Ocean works great, and if you're new, follow <this link> for a $100 free voucher. They also have great guides for setup <here>, <here>, and <here>.
 
+You will also need to generate your pool certs. We're currently working on a guide to do this with ansible, so stay tuned. Otherwise, head over to the Jormungandr for Newbs Guide <here>.
 
 ## Setup Docker
 
@@ -51,7 +52,11 @@ For more info on post-installation Docker setup, go <a href="https://docs.docker
 
 ## Setting up your config files
 
+Download your node-config.yaml file <a href="https://hydra.iohk.io/build/1523436/download/1/index.html">here</a> for v0.8.13. You're looking for the itn_rewards_v1 entry (unless you're going crazy and doing the nightly build or something). 
 
+Then copy the Genesis Hash and put it in a file called genesis-hash.txt.
+
+Find your pool-secret.yaml file. Put all three in the directory <>.
 
 ### Break down into end to end tests
 
